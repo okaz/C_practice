@@ -18,7 +18,9 @@ int main(){
 }
 
 void sort3(int *n1,int *n2,int *n3){
+/* バブルソートの要領で並び替える */
 	int temp;
+
 
 	if(*n1>*n2){
 		/* 値を入れ替えることで2つの整数を昇順に並べる */
@@ -26,6 +28,7 @@ void sort3(int *n1,int *n2,int *n3){
 		*n1=*n2;
 		*n2=temp;
 	}
+
 	if(*n2>*n3){
 		temp=*n2;
 		*n2=*n3;
